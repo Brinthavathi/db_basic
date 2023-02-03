@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>database</head>
+        <body>
+            {{data}}
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>content</th>
+                    <th>author</th>
+                </tr>
+                {%for i in data %}
+                <tr>
+                    <td>{{i.id}}</td>
+                    <td>{{i.name}}</td>
+                    <td>{{i.content}}</td>
+                    <td>{{i.author}}</td>
+                </tr>
+                {%endfor%}
+            </table>
+        </body>
+    
+</html>
